@@ -18,25 +18,7 @@ These pages are hosted via GitHub Pages to satisfy Google OAuth's app verificati
 This site is configured to be hosted on GitHub Pages. The live URLs are:
 - **Home**: `https://Vuqar05.github.io/rclone-oauth-site/`
 - **Privacy Policy**: `https://Vuqar05.github.io/rclone-oauth-site/privacy.html`
-
-### How to Enable GitHub Pages
-
-1. Go to your repository settings: `https://github.com/Vuqar05/rclone-oauth-site/settings`
-2. Scroll down to the **Pages** section
-3. Under "Source", select **Deploy from a branch**
-4. Choose branch: **main**
-5. Choose folder: **/ (root)**
-6. Click **Save**
-
 GitHub will build and deploy your site within a few minutes. The live URLs will be available at the addresses listed above.
-
-## Features
-
-- ✅ Clean, minimal design with no external dependencies
-- ✅ Fully static HTML and CSS (no frameworks)
-- ✅ No tracking scripts, analytics, or cookies
-- ✅ Self-contained and self-hosted
-- ✅ Mobile-responsive design
 
 ## Privacy
 

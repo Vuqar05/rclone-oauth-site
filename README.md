@@ -1,8 +1,8 @@
 # rclone OAuth Site
 
-This repository contains a static website for **rclone vugar**, a personal-use OAuth application client for the rclone command-line tool that connects to Google Drive.
+This repository contains a static website for **rclone-vugar**, a personal-use OAuth application client for the rclone command-line tool that connects to Google Drive.
 
-> **Important:** The app name shown on this site (`rclone vugar`) must exactly match the "App name" configured on the [OAuth consent screen](https://console.cloud.google.com/apis/credentials/consent) in Google Cloud Console. If you rename the app in either place, update the other to match.
+> **Important:** The app name shown on this site (`rclone-vugar`) must exactly match the "App name" configured on the [OAuth consent screen](https://console.cloud.google.com/apis/credentials/consent) in Google Cloud Console. If you rename the app in either place, update the other to match.
 
 ## Contents
 

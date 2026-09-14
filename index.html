@@ -29,26 +29,45 @@
             border-radius: 8px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             padding: 60px 40px;
-            max-width: 600px;
-            text-align: center;
+            max-width: 680px;
+            text-align: left;
         }
-        
+
         h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
             color: #667eea;
+            text-align: center;
         }
-        
-        p {
-            font-size: 1.1em;
-            margin-bottom: 30px;
+
+        h2 {
+            font-size: 1.25em;
+            margin: 30px 0 12px;
+            color: #333;
+        }
+
+        p, li {
+            font-size: 1.05em;
+            margin-bottom: 15px;
             color: #555;
             line-height: 1.8;
         }
-        
+
+        ul {
+            margin: 0 0 15px 24px;
+        }
+
+        .cta {
+            text-align: center;
+        }
+
         a {
+            color: #667eea;
+        }
+
+        .cta a {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 12px 30px;
             background: #667eea;
             color: white;
@@ -57,25 +76,55 @@
             font-size: 1em;
             transition: background 0.3s ease;
         }
-        
-        a:hover {
+
+        .cta a:hover {
             background: #764ba2;
         }
-        
+
         footer {
-            margin-top: 50px;
+            margin-top: 40px;
             padding-top: 30px;
             border-top: 1px solid #eee;
             font-size: 0.9em;
             color: #999;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>rclone-vugar</h1>
-        <p>A personal command-line tool for syncing and managing your files with Google Drive. Built for seamless integration with the rclone ecosystem.</p>
-        <a href="privacy.html">Privacy Policy</a>
+        <p>
+            <strong>rclone-vugar</strong> is a personal-use configuration of
+            <a href="https://rclone.org" target="_blank" rel="noopener">rclone</a>, the open-source
+            command-line tool for managing and syncing files across cloud storage providers. This
+            instance is used by a single individual to keep files synchronized between their own
+            local device and their own Google Drive account — for example, backing up a local
+            folder to Drive, mirroring a Drive folder locally, or moving files between the two from
+            the command line.
+        </p>
+
+        <h2>What this app does</h2>
+        <ul>
+            <li>Lists, uploads, downloads, renames, moves, and deletes files and folders in the user's own Google Drive, as directed by rclone commands the user runs locally.</li>
+            <li>Compares file metadata (size, checksum, modified time) between the local device and Google Drive to perform efficient, incremental sync operations.</li>
+            <li>Runs entirely on the user's own device — there is no hosted server, backend, or web service associated with this app.</li>
+        </ul>
+
+        <h2>Why it requests access to your Google data</h2>
+        <p>
+            To do the above, this app requests Google OAuth scopes for Google Drive file access
+            (<code>drive</code>), read-only Drive metadata (<code>drive.metadata.readonly</code>),
+            and read-only Google Docs metadata (<code>docs</code>), so it can find, compare, and
+            transfer files during sync operations. It does not request any data beyond what these
+            file-sync features need, and it does not use your data for advertising, sell it, or
+            share it with third parties. See the Privacy Policy below for full details.
+        </p>
+
+        <div class="cta">
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+
         <footer>
             <p>&copy; 2026 rclone-vugar. Personal use application.</p>
         </footer>
